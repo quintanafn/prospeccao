@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="AIzaSyDC3B2pR0BSiW3upRBX4aBQ1yW1WT19hhA">
+
+  <title>Exibição de Perfis de Empresas</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://apis.google.com/js/api.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,600&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>PROSPECÇÃO</h1>
+  <div class="container">
+    <div class="profile-container">
+      <!-- Campos do perfil da empresa -->
+      <div class="profile-field company-photo">
+        <div class="field-content">
+          <img id="company-photo" src="" alt="Imagem da Empresa">
+        </div>
+      </div>
+      <div class="profile-field niche">
+        <div class="field-content"></div>
+      </div>
+      <div class="profile-field status">
+        <div class="field-content"></div>
+      </div>
+      <div class="profile-field company-name">
+        <label class="field-label">Empresa</label>
+        <div class="field-content"></div>
+      </div>
+      <div class="profile-field contact-name">
+        <label class="field-label">Nome</label>
+        <div class="field-content">
+          <textarea class="name"></textarea>
+        </div>
+      </div>
+      <div class="profile-field phone-number">
+        <label class="field-label">Tel</label>
+        <div class="field-content"></div>
+        <div class="add-button">
+          <button class="round-button">
+            <img src="/add.png" alt="Adicionar número">
+          </button>
+        </div>        
+      </div>
+      <div class="profile-field cnpj">
+        <label class="field-label">CNPJ</label>
+        <div class="field-content">
+          <textarea class="cnpjs"></textarea>
+        </div>
+      </div>
+      <div class="profile-field obs">
+        <label class="field-label">OBS:</label>
+        <div class="field-content">
+          <textarea class="observation"></textarea>
+        </div>
+      </div>
+      <div class="profile-field calendar">
+        <div class="field-content">
+          <a href="https://calendly.com/">
+            <img class="img" src="https://images.ctfassets.net/co0pvta7hzrh/6UkeAlDkH8v4oRZ0HucBxW/b8d1a57cd8cc88ffe8269fcc1954c8e3/calendly_logo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="profile-field insta">
+        <div class="fiel-content">
+          <a href="">
+            <img class="insta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/800px-Instagram-Icon.png" alt="">
+          </a>
+        </div>
+        <div class="add-button-social">
+          <button class="round-button-social alpha">
+            <img src="/add.png" alt="Adicionar número">
+          </button>
+        </div>        
+      </div>
+      <div class="profile-field face">
+        <div class="field-content">
+          <a href="">
+            <img class="face" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="">
+          </a>
+        </div>
+        <div class="add-button-social">
+          <button class="round-button-social b">
+            <img src="/add.png" alt="Adicionar número">
+          </button>
+        </div>        
+      </div>
+      <div class="profile-field site">
+        <div class="field-content">
+          <a href="">
+            <img class="site" src="/global.png" alt="">
+          </a>
+        </div>
+        <div class="add-button-social">
+          <button class="round-button-social c">
+            <img src="/add.png" alt="Adicionar número">
+          </button>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="navigation-buttons">
+    <button onclick="previousProfile()">Anterior</button>
+    <button onclick="nextProfile()">Próximo</button>
+    <button id="save" onclick="atualizarObservacao()">Salvar</button>
+  </div>
+    
+  <script src="script.js"></script>
+
+</body>
+</html>
