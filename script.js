@@ -9,7 +9,8 @@ function carregarPerfilCliente() {
     .then((response) => response.json())
     .then((data) => {
       exibirPerfilCliente(data.values[0])
-    console.log(data.values[0])
+
+    console.log(data)
   })
     
     .catch((error) => console.error("Erro ao obter dados da planilha:", error));
@@ -66,10 +67,12 @@ function salvarPerfilCliente(cliente) {
 
   fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?valueInputOption=RAW&key=${apiKey}`, params)
     .then((response) => {
+      console.log(response)
       if (!response.ok) {
         throw new Error("Erro ao salvar os dados na planilha.");
       } else {
         // Atualizar o campo de observação localmente após salvar na planilha
+        
         const observacaoElement = document.querySelector(".observation");
         observacaoElement.value = cliente[6];
       }
